@@ -1,0 +1,17 @@
+<mat-card class="card" *ngIf="users">
+  <h2>Users</h2>
+  <mat-card-content>
+    <button mat-raised-button color="primary" [routerLink]="['/page2']">Add a user</button>
+    <br><br><br>
+    <table>
+      <thead style="font-weight: bold">
+        <td>Nama</td>
+        <td>Email</td>
+      </thead>
+      <tbody *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+      </tbody>
+    </table>
+  </mat-card-content>
+</mat-card>

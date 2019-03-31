@@ -1,0 +1,12 @@
+.student-card {
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+thead {
+  font-style: bold;
+}
